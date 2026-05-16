@@ -1,1 +1,122 @@
 
+@font-face {
+      font-family: "Kdam Thmor Pro";
+      src: url("../assets/fonts/Kdam Thmor Pro/KdamThmorPro-Regular.ttf") format("truetype");
+}
+
+*, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+html {
+      scroll-behavior: smooth;
+}
+
+body {
+      font-family: "Kdam Thmor Pro", sans-serif;
+      background: white;
+      line-height: 1.6;
+}
+
+.header-navbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      padding: 50px 260px 0px 260px;
+      gap: 60px;
+      background: transparent;
+}
+
+.header-navbar-links {
+      display: flex;
+      list-style: none;
+      gap: 60px;
+}
+
+.header-navbar-links a {
+      color: #FFFFFF;
+}
+
+.header-navbar-links a:hover {
+      color: #3894D9;
+}
+
+.hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+}
+
+.hero-banner-background {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+}
+
+
+
+/*
+CLASSES TO YET TO BE STYLED:
+
+hero content
+hero title
+hero buttons
+
+about us paw print
+about us title
+about us content
+about us who we are
+about us how we work
+about us center photo
+about us left photo
+about us right photo
+
+faq title
+faq paw print
+faq grids
+faq grid1
+"" content
+faq grid2
+"" content
+faq grid3
+"" content
+faq grid4
+"" content
+faq grid5
+"" content
+faq grid6
+"" content
+
+footer left
+footer navbar links
+footer tagline
+social media icons
+footer right
+contact form
+form row
+form field
+footer copyright
+*/
+
+
+
+/*
+HEX CODES:
+
+FFFFFF
+E9E9E9
+A9A9A9
+3894D9
+ADDAFF
+*/
