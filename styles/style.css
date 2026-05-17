@@ -21,10 +21,10 @@ body {
 
 .header-navbar {
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
       z-index: 100;
+      top: 0;
+      right: 0;
+      left: 0;
       display: flex;
       align-items: center;
       justify-content: left;
@@ -35,8 +35,8 @@ body {
 
 .header-navbar-links {
       display: flex;
-      list-style: none;
       font-size:  20px;
+      list-style: none;
       gap: 110px;
 }
 
@@ -65,22 +65,19 @@ body {
       height: 100%;
       object-fit: cover;
       object-position: top;
+      pointer-events: none;
 }
 
 .hero-content {
       position: relative;
       z-index: 2;
+      height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
       align-items: flex-start;
-      height: 100%;
+      justify-content: flex-start;
       padding: 350px 260px 80px 260px;
       gap: 20px;
-}
-
-.hero-title, .hero-subtitle {
-      font-family: "Kdam Thmor Pro", sans-serif;
 }
 
 .hero-title {
@@ -100,29 +97,28 @@ body {
 }
 
 .hero-signin-button, .hero-signup-button {
+      width: 292px;
       display: inline-block;
       padding: 16px;
-      min-width: 292px;
-      text-align: center;
-      font-family: "Kdam Thmor Pro", sans-serif;
       font-size: 20px;
       text-decoration: none;
+      text-align: center;
       border-radius: 20px;
       cursor: pointer;
 }
 
 .hero-signin-button {
-      background-color: #FFFFFF;
       color: #3894D9;
+      background-color: #FFFFFF;
 }
 
 .hero-signin-button:hover {
-      background-color: #ADDAFF;
+      background-color: #E9E9E9;
 }
 
 .hero-signup-button {
-      background-color: #3894D9;
       color: #FFFFFF;
+      background-color: #3894D9;
 }
 
 .hero-signup-button:hover {
@@ -131,28 +127,28 @@ body {
 
 #about-us {
       position: relative;
-      background-color: transparent;
       margin-top: -20px;
+      background-color: transparent;
 }
 
 .about-us-content {
       position: relative;
       z-index: 1;
-      background-color: #ADDAFF;
-      border-radius: 20px;
-      padding: 80px 260px 0px 260px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: auto auto;
+      border-radius: 20px;
+      padding: 80px 260px 0px 260px;
       gap: 16px;
+      background-color: #ADDAFF;
 }
 
 .about-us-title {
-      grid-column: 1 / -1;
       z-index: 2;
-      text-align: center;
-      font-size: 44px;
+      grid-column: 1 / -1;
       color: #FFFFFF;
+      font-size: 44px;
+      text-align: center;
       margin-bottom: 10px;
 }
 
@@ -162,30 +158,27 @@ body {
       width: 80px;
 }
 
-/* vvv naka-bunch up lang sila sa top left ng about us page w this placeholder style below kasi
-   napupunta sila sa likod ng blue background ng about us section :) */
-
 .about-us-paw-print:nth-child(1) { top: 20px; left: 20px; }
 .about-us-paw-print:nth-child(2) { top: 20px; right: 20px; }
 .about-us-paw-print:nth-child(3) { bottom: 20px; left: 20px; }
 .about-us-paw-print:nth-child(4) { bottom: 20px; right: 20px; }
 
 .about-us-who-we-are, .about-us-how-we-work {
-      background-color: #E9E9E9;
-      opacity: 50%;
       padding: 28px;
+      opacity: 50%;
+      background-color: #E9E9E9;
 }
 
 #footer {
-      background-color: #E9E9E9;
-      border-radius: 20px;
-      padding: 60px 260px 0px 260px;
       z-index: 1;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto auto;
-      gap: 40px;
       align-items: start;
+      border-radius: 20px;
+      padding: 60px 260px 0px 260px;
+      gap: 40px;
+      background-color: #E9E9E9;
 }
 
 .footer-left {
@@ -194,14 +187,21 @@ body {
       gap: 20px;
 }
 
-.footer-left img {
-      width: 60px;
+.footer-navbar {
+      display: flex;
+      align-items: center;
+      gap: 80px;
+}
+
+.footer-navbar img {
+      width: 100px;
 }
 
 .footer-navbar-links {
       display: flex;
-      font-size: 20px;
-      gap: 40px;
+      font-size: 22px;
+      list-style: none;
+      gap: 78px;
 }
 
 .footer-navbar-links a {
@@ -214,19 +214,23 @@ body {
 }
 
 .footer-tagline {
-      font-size: 24px;
       color: #A9A9A9;
+      font-size: 24px;
+      padding-top: 16px;
 }
 
 .social-media-icons {
       display: flex;
-      align-items: center;
+      justify-content: flex-end;
+      padding-top: 20px;
+      padding-right: 65px;
       gap: 16px;
 }
 
 .social-media-icons img {
-      opacity: 70%;
+      width: 50px;
       cursor: pointer;
+      opacity: 70%;
 }
 
 .social-media-icons img:hover {
@@ -240,15 +244,24 @@ body {
 }
 
 .contact-us-title {
-      text-align: right;
-      font-size: 44px;
       color: #A9A9A9;
+      font-size: 44px;
+      text-align: right;
+}
+
+.contact-form label {
+      width: 100%;
+      display: block;
+      color: #A9A9A9;
+      font-size: 20px;
+      text-align: right;
+      padding-bottom: 12px;
 }
 
 .contact-form form {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 12px;
 }
 
 .form-row {
@@ -258,26 +271,73 @@ body {
 }
 
 .form-field {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
+      display: flex;
+      flex-direction: column;
 }
 
-.form-field label, .contact-form label {
+.form-field label {
+      width: 100%;
+      display: block;
       color: #A9A9A9;
       font-size: 20px;
       text-align: right;
 }
 
+.form-field input[type="text"], .form-field input[type="email"], .contact-form input[type="text"] {
+      width: 100%;
+      color: #686868;
+      font-size: 20px;
+      font-family: "Kdam Thmor Pro", sans-serif;
+      outline: none;
+      border: none;
+      border-radius: 20px;
+      padding: 12px;
+      background-color: #FFFFFF;
+}
 
+.message-wrapper {
+      position: relative;
+}
+
+.message-wrapper textarea {
+      width: 100%;
+      display: block;
+      color: #686868;
+      font-size: 20px;
+      font-family: "Kdam Thmor Pro", sans-serif;
+      outline: none;
+      border: none;
+      border-radius: 20px;
+      padding: 12px;
+      background-color: #FFFFFF;
+      resize: none;
+}
+
+.message-wrapper input[type="submit"] {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      color: #FFFFFF;
+      font-size: 16px;
+      font-family: "Kdam Thmor Pro", sans-serif;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: #A9A9A9;
+}
+
+.message-wrapper input[type="submit"]:hover {
+      background-color: #686868;
+}
 
 .footer-copyright {
-      background-color: #A9A9A9;
+      grid-column: 1 / -1;
+      color: #686868;
+      text-align: center;
       margin-left: -260px;
       margin-right: -260px;
-      grid-column: 1 / -1;
-      text-align: center;
-      color: #686868;
+      background-color: #A9A9A9;
 }
 
 
