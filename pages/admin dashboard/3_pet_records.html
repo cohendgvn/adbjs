@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Overview</title>
+      <link rel="stylesheet" href="styles/admin-dashboard.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">...</div>
+
+    <nav>
+      <a href="pages/admin dashboard/1_overview.html">Overview</a>
+      <a href="pages/admin dashboard/2_user_management.html">User Management</a>
+      <a href="pages/admin dashboard/3_pet_records.html">Pet Records</a>
+    </nav>
+
+    <div class="admin-info">
+      <span>Admin</span>
+          <p>@FURPAWS</p>
+      <button id="logoutbtn">Logout</button>
+    </div>
+  </header>
+
+  <main class="dashboard-usermng">
+
+      <h3>[SELECTED PET | GENDER]</h3>
+        
+    <section class="user-details">
+      <p><strong>Age:</strong> <span id="pet_age"></span></p>
+      <p><strong>Species:</strong> <span id="species"></span></p>
+      <p><strong>Breed:</strong> <span id="breed"></span></p>
+      <p><strong>Birthday:</strong> <span id="petbday"></span></p>
+
+      <p><strong>Registration ID:</strong> <span id="petregid"></span></p>
+      <p><strong>Registration Status:</strong> <span id="petstatus"></span></p>
+      <p><strong>Notes:</strong> <span id="petstatus"></span></p>
+
+      <p><strong>Medical Records:</strong> <span id="petmedrec"></span></p>
+
+      <p><strong>More About This Pet</strong> <span id="addinfo"></span></p>
+
+    </section>
+        
+]    <section class="user-table">
+
+      <div class="sort-dropdown">
+  <button class="sort-btn" id="sortbtn">Sort By: <span class="arrow">▼</span>
+  </button>
+  
+  <ul class="dropdown-content" id="dropdownMenu">
+    <li class="dropdown-item" data-value="name">Owner ID</li>
+    <li class="dropdown-item" data-value="userid">Species</li>
+    <li class="dropdown-item" data-value="petstatus">Registration Status</li>
+  </ul>
+</div>
+
+      <div class="controls">
+        <input type="text" id="searchinput" placeholder="Search">
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Owner's User ID</th>
+            <th>Registration ID</th>
+            <th>Name</th>
+            <th>Species</th>
+            <th>Registration Status</th>
+            <th>More</th>
+          </tr>
+        </thead>
+
+        <tbody id="userTableBody">
+              <!--wala pa-->
+        </tbody>
+      </table>
+
+    </section>
+
+  </main>
+
+  <script src="scripts/admin-dashboard.js"></script>
+</body>
+</html>

@@ -10,6 +10,63 @@
 </head>
 
 <body>
-</body>
 
+  <header class="navbar">
+    <div class="logo">...</div>
+
+    <nav>
+      <a href="pages/admin dashboard/1_overview.html">Overview</a>
+      <a href="pages/admin dashboard/2_user_management.html">User Management</a>
+      <a href="pages/admin dashboard/3_pet_records.html">Pet Records</a>
+    </nav>
+
+    <div class="admin-info">
+      <span>Admin</span>
+          <p>@FURPAWS</p>
+      <button id="logoutbtn">Logout</button>
+    </div>
+  </header>
+
+  <main class="dashboard">
+
+    <h1>ADMIN DASHBOARD</h1>
+
+    <section class="top-cards">
+
+      <div class="card">
+        <h2>Pet Demographics</h2>
+        <div class="chart-box">
+              <!-- wala pa -->
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Pending Approvals</h2>
+        <ul id="pendings">
+          <!-- info -->
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Renewal & Compliance</h2>
+            <ul>
+              <li><p>Active: <span id="active">0</span></p></li>
+              <li><p>Overdue: <span id="overdue">0</span></p></li>
+              <li><p>Upcoming: <span id="upcoming">0</span></p></li>
+            </ul>
+      </div>
+
+    </section>
+
+    <section class="summary">
+      <h2>Pet Registration Summary</h2>
+      <div class="chart-box">
+            <!-- wala pa -->
+      </div>
+    </section>
+
+  </main>
+
+  <script src="scripts/admin-dashboard.js"></script>
+</body>
 </html>

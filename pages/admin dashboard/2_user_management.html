@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Overview</title>
+      <link rel="stylesheet" href="styles/admin-dashboard.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">...</div>
+
+    <nav>
+      <a href="pages/admin dashboard/1_overview.html">Overview</a>
+      <a href="pages/admin dashboard/2_user_management.html">User Management</a>
+      <a href="pages/admin dashboard/3_pet_records.html">Pet Records</a>
+    </nav>
+
+    <div class="admin-info">
+      <span>Admin</span>
+          <p>@FURPAWS</p>
+      <button id="logoutbtn">Logout</button>
+    </div>
+  </header>
+
+  <main class="dashboard-usermng">
+
+      <h3>[SELECTED USER]</h3>
+        
+    <section class="user-details">
+      <p><strong>User ID:</strong> <span id="userid"></span></p>
+      <p><strong>Email:</strong> <span id="useremail"></span></p>
+      <p><strong>Contact:</strong> <span id="usercontact"></span></p>
+
+      <h3>PETS</h3>
+      <ul id="userpets"></ul>
+
+      <h4>REGISTRATION ID</h4>
+      <span id="petregid"></span></p>
+          <!--tama ba idea ko ng registration id?-->
+      <h4>STATUS</h4>
+      <span id="petstatus"></span></p>
+    </section>
+        
+]    <section class="user-table">
+
+      <div class="sort-dropdown">
+  <button class="sort-btn" id="sortbtn">Sort By: <span class="arrow">▼</span>
+  </button>
+  
+  <ul class="dropdown-content" id="dropdownMenu">
+    <li class="dropdown-item" data-value="name">Name</li>
+    <li class="dropdown-item" data-value="userid">User ID</li>
+  </ul>
+</div>
+
+      <div class="controls">
+        <input type="text" id="searchinput" placeholder="Search">
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>User ID</th>
+            <th>Email</th>
+            <th>Contact</th>
+            <th># Pets</th>
+            <th>More</th>
+          </tr>
+        </thead>
+
+        <tbody id="userTableBody">
+              <!--wala pa-->
+        </tbody>
+      </table>
+
+    </section>
+
+  </main>
+
+  <script src="scripts/admin-dashboard.js"></script>
+</body>
+</html>
+
