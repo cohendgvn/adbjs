@@ -1,1 +1,142 @@
 
+@font-face {
+      font-family: "Kdam Thmor Pro";
+      src: url("../assets/fonts/Kdam Thmor Pro/KdamThmorPro-Regular.ttf") format("truetype");
+}
+
+*, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      font-family: "Kdam Thmor Pro", sans-serif;
+      align-items: center;
+      justify-content: flex-end;
+      overflow: hidden;
+      background: #FFFFFF;
+}
+
+.background {
+      position: fixed;
+      z-index: 0;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+}
+
+.logo{
+      position: fixed;
+      z-index: 1;
+      top: 40px;
+      left: 40px;
+}
+
+.logo img {
+      width: 60px;
+      display: block;
+}
+
+.card {
+      position: relative;
+      z-index: 1;
+      width: 840px;
+      height: 880px;
+      background-color: rgba(100, 100, 100, 0.5);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 80px;
+      margin-bottom: 80px;      
+      margin-right: 200px;
+      padding: 80px;
+}
+
+.card-header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+}
+
+.card-header-subtitle {
+      color: #ADDAFF;
+      font-size: 38px;
+}
+
+.card-header-title {
+      color: #FFFFFF;
+      font-size: 46px;
+}
+
+.card-form {
+      display: flex;
+      flex-direction: column;
+}
+
+.form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+}
+
+.form-field {
+      display: flex;
+      flex-direction: column;
+}
+
+.form-field input {
+      width: 100%;
+      padding: 16px;
+      outline: none;
+      border: none;
+      border-radius: 20px;
+      background-color: #FFFFFF;
+      color: #A9A9A9;
+      font-size: 20px;
+}
+
+.form-submit {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 10px;
+}
+
+.form-submit input[type="submit"] {
+      width: 200px;
+      padding: 16px;
+      background-color: #ADDAFF;
+      border: none;
+      border-radius: 20px;
+      font-size: 20px;
+      cursor: pointer;
+}
+
+.form-submit input[type="submit"]:hover {
+      background-color: #3894D9;
+}
+
+.card-footer {
+      display: flex;
+      flex-direction: column;
+}
+
+.card-footer p {
+      color: #A9A9A9;
+      font-size: 20px;
+      text-align: center;
+}
+
+.card-footer a {
+      color: #ADDAFF;
+}
+
+.card-footer a:hover {
+      color: #3894D9;
+}
