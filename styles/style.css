@@ -1,4 +1,3 @@
-
 @font-face {
       font-family: "Kdam Thmor Pro";
       src: url("assets/fonts/Kdam Thmor Pro/KdamThmorPro-Regular.ttf") format("truetype");
@@ -32,7 +31,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: left;
-      padding: 50px 260px 0px 260px;
+      padding: 30px 260px 0px 260px;
       gap: 140px;
       background: transparent;
 }
