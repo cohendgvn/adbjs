@@ -36,6 +36,10 @@ body {
       background: transparent;
 }
 
+.header-navbar img {
+    width: 80px;
+}
+
 .header-navbar-links {
       display: flex;
       font-size:  20px;
