@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +5,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Overview</title>
-      <link rel="stylesheet" href="../../styles/admin-dashboard.css">
+      <link rel="stylesheet" href="styles/admin-dashboard.css">
 </head>
 
 <body>
@@ -26,46 +25,46 @@
   </div>
 </header>
 
-  <main class="dashboard">
+  <main class="admin-dashboard">
 
-    <h1>ADMIN DASHBOARD</h1>
+    <h2>ADMIN DASHBOARD ● ● ●</h2>
 
-    <section class="top-cards">
+  <section class="card pet-demographics">
+    <h3>PET DEMOGRAPHICS</h3>
+    <div class="inner-grid">
+      <div class="sub-card">Species Chart</div>
+      <div class="sub-card">Age Group Chart</div>
+    </div>
+  </section>
 
-      <div class="card">
-        <h2>Pet Demographics</h2>
+  <section class="card status-section">
+    <div class="sub-card">Vaccination Status</div>
+    <div class="sub-card">Neuter/Spay Status</div>
+  </section>
+
+  <aside class="side-panel">
+    <div class="pending">
+          <h2>Pending Approvals</h2>
+          <ul id="pendings">
+            <nav class="pending-nav">
+              <a href="pages/admin dashboard/4_pending_approvals.html" class="btn-link">See More</a>
+            </nav>
+    </div>
+    <div class="overdue">
+          <h2>Overdue Registrations</h2>
+          <p>Number of Pets with Overdue Registration: <span id="display-count">0</span></p>
+    </div>
+  </aside>
+
+  <footer class="card registration-summary">
+    <h2>PET REGISTRATION SUMMARY</h2>
         <div class="chart-box">
-              <!-- wala pa -->
-        </div>
-      </div>
-
-      <div class="card">
-        <h2>Pending Approvals</h2>
-        <ul id="pendings">
-          <!-- info -->
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>Renewal & Compliance</h2>
-            <ul>
-              <li><p>Active: <span id="active">0</span></p></li>
-              <li><p>Overdue: <span id="overdue">0</span></p></li>
-              <li><p>Upcoming: <span id="upcoming">0</span></p></li>
-            </ul>
-      </div>
-
-    </section>
-
-    <section class="summary">
-      <h2>Pet Registration Summary</h2>
-      <div class="chart-box">
             <!-- wala pa -->
       </div>
-    </section>
+  </footer>
 
   </main>
 
-  <script src="../../scripts/admin-dashboard.js"></script>
+  <script src="scripts/admin-dashboard.js"></script>
 </body>
 </html>
