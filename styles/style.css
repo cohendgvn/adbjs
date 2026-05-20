@@ -1,5 +1,6 @@
 
-/* don't modify na plz, io-optimize ko pa lang kasi siya tsaka naka-track na rin sa list ko mga aayusin ko :(( */
+/* don't modify na plz, io-optimize ko pa lang kasi siya tsaka naka-track na rin sa list ko mga aayusin ko :((
+   pls lmk muna kapag you think na may kailangang baguhin or alisin that i might've overlooked */
 
 @font-face {
       font-family: "Kdam Thmor Pro";
@@ -40,14 +41,14 @@ body {
 }
 
 .header-navbar img {
-    width: 80px;
+    width: 100px;
 }
 
 .header-navbar-links {
       display: flex;
       font-size:  20px;
       list-style: none;
-      gap: 136px;
+      gap: 126px;
 }
 
 .header-navbar-links a {
