@@ -3,6 +3,18 @@
       src: url("../assets/fonts/Kdam Thmor Pro/KdamThmorPro-Regular.ttf") format("truetype");
 }
 
+.header {
+  display: flex;
+  align-items: center;     
+  padding: 15px 20px;
+  gap: 15px;               
+}
+
+.nav-bar {
+  margin-left: auto;        
+}
+
+
 body {
   margin: 0;
   background: #0f2235;
