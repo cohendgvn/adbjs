@@ -3,38 +3,65 @@
       src: url("../assets/fonts/Kdam Thmor Pro/KdamThmorPro-Regular.ttf") format("truetype");
 }
 
-.header {
-  display: flex;
-  align-items: center;     
-  padding: 15px 20px;
-  gap: 15px;               
+body {
+  margin: 0;
+  background: #0f2235;
+  color: #cfe6ff;
 }
 
-.nav-bar {
-  margin-left: auto;        
+.dashboard-container {
+  padding: 20px;
 }
 
-.admin-dashboard {
+.dashboard-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 300px; 
-  grid-gap: 10px;
-  background-color: #1a2332;
-  padding: 10px;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
 }
 
 .card {
-  background-color: #3b4b61; 
+  background: #6f8fa8;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.small-card {
+  background: #5f7d96;
+  padding: 15px;
   border-radius: 12px;
-  padding: 10px;
+  margin-bottom: 15px;
 }
 
-.sub-card {
-  background-color: #4a5c78;
-  border-radius: 8px;
-  padding: 10px;
-  margin-top: 10px;
+.card h3 {
+  margin-top: 0;
+  font-size: 18px;
 }
 
-.registration-summary {
-  grid-column: 1 / -1; 
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.summary {
+  margin-top: 20px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  background: #d9d9d9;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  background: #bfbfbf;
+  padding: 8px 15px;
+  border-radius: 15px;
+  color: black;
 }
