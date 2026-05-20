@@ -11,7 +11,30 @@
 
 <body>
 
-      <script src="../../scripts/admin-dashboard.js"></script>
-</body>
+      <script src="scripts/admin-dashboard.js"></script>
 
+<header class="navbar">
+    <div class="logo">...</div>
+
+    <nav>
+      <a href="pages/admin dashboard/1_overview.html">Overview</a>
+      <a href="pages/admin dashboard/2_user_management.html">User Management</a>
+      <a href="pages/admin dashboard/3_pet_records.html">Pet Records</a>
+    </nav>
+
+    <div class="admin-info">
+    <span class="admin">ADMIN<br><small>@ FurPaws</small></span>
+    <button class="logout" onclick="logout()">⏻</button>
+  </div>
+</header>
+
+
+
+<script>
+function logout() {
+  window.location.href = "../index.html";
+}
+</script>
+
+</body>
 </html>
