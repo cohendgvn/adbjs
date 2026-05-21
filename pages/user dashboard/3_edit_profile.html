@@ -5,11 +5,163 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Edit Profile</title>
+      <title>User Dashboard - Edit Profile</title>
       <link rel="stylesheet" href="../../styles/user-dashboard.css">
 </head>
 
 <body>
+      <nav class="dashboard-navbar">
+            <img class="dashboard-navbar-logo" src="../../assets/svg/about us paw print 1.svg">
+
+            <div class="dashboard-navbar-tabs">
+                  <a href="1_overview.html" class="dashboard-tab-inactive">OVERVIEW</a>
+                  <a href="2_my_pets.html" class="dashboard-tab-inactive">MY PETS</a>
+                  <a href="3_edit_profile.html" class="dashboard-tab-active">EDIT PROFILE</a>
+            </div>
+
+            <div class="dashboard-navbar-user">
+                  <div class="dashboard-navbar-user-icon">
+                        <img src="../../assets/svg/avatar icon - dashboard.svg">
+                  </div>
+
+                  <div class="dashboard-navbar-user-info">
+                        <p class="dashboard-navbar-user-name">LAST NAME, FIRST NAME, M.I.</p>
+                        <p class="dashboard-navbar-user-email">name@gmail.com</p>
+                  </div>
+
+                  <button class="dashboard-navbar-logout">
+                        <img src="../../assets/svg/power button icon.svg">
+                  </button>
+            </div>
+      </nav>
+
+      <main class="dashboard-container">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 1.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 1.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 1.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 1.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 1.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 2.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 2.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 2.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 2.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 2.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 1.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 1.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 1.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 1.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 1.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 2.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 2.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 2.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 2.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 2.svg">
+
+            <div class="edit-profile-container">
+                  <div class="edit-profile-grid">
+                        <div class="edit-profile-grid-header">
+                              <p>EDIT MY PROFILE</p>
+
+                              <div class="edit-profile-grid-links">
+                                    <a href="" class="change-password-link">CHANGE PASSWORD</a>
+                                    <a href="" class="request-account-deletion-link">REQUEST ACCOUNT DELETION</a>
+                              </div>
+                        </div>
+
+                        <hr>
+
+                        <form class="edit-profile-form">
+                              <div class="edit-profile-section">
+                                    <div class="edit-profile-form-row">
+
+                                    <p>NAME</p>
+                                          <div class="edit-profile-form-field">
+                                                <label>LAST NAME</label>
+                                                <input type="text">
+                                          </div>
+                                          <div class="edit-profile-form-field">
+                                                <label>FIRST NAME</label>
+                                                <input type="text">
+                                          </div>
+                                          <div class="edit-profile-form-field">
+                                                <label>M.I.</label>
+                                                <input type="text">
+                                          </div>
+                                    
+                                    <p>BIRTHDAY</p>
+                                          <div class="edit-profile-form-field">
+                                                <label>MONTH</label>
+                                                <input type="text">
+                                          </div>
+                                          <div class="edit-profile-form-field">
+                                                <label>DAY</label>
+                                                <input type="text">
+                                          </div>
+                                          <div class="edit-profile-form-field">
+                                                <label>YEAR</label>
+                                                <input type="text">
+                                          </div>
+
+                                    </div>
+                              </div>
+
+                              <div class="edit-profile-section">
+                                    <div class="edit-profile-form-row">
+                                          
+                                    <p>CONTACTS</p>
+                                          <div class="edit-profile-form-field">
+                                                <label>E-MAIL ADDRESS</label>
+                                                <input type="email">
+                                          </div>
+
+                                          <div class="edit-profile-form-field">
+                                                <label>CONTACT NUMBER</label>
+                                                <input type="text">
+                                          </div>
+                                    </div>
+                              </div>
+
+                              <div class="edit-profile-section">
+                                    <div class="edit-profile-form-row">
+
+                                    <p>HOME ADDRESS</p>
+                                          <div class="edit-profile-form-field">
+                                                <label>HOUSE NUMBER</label>
+                                                <input type="text">
+                                          </div>
+                                          <div class="edit-profile-form-field">
+                                                <label>STREET NAME / BUILDING</label>
+                                                <input type="text">
+                                          </div>
+                                          <div class="edit-profile-form-field">
+                                                <label>BARANGAY</label>
+                                                <input type="text">
+                                          </div>
+                                    </div>
+                              </div>
+
+                              <div class="edit-profile-submit">
+                                    <button type="submit" class="update-profile-button">UPDATE PROFILE</button>
+                              </div>
+                        </form>
+                  </div>
+
+                  <div class="edit-profile-panel">
+                        <div class="profile-avatar">
+                              <img src="../../assets/svg/avatar icon - edit profile.svg">
+                        </div>
+
+                        <div class="profile-summary">
+                              <p>LAST NAME, FIRST NAME M.I. </p>
+                              <p>USER ID: </p>
+                              <p>BIRTHDAY: </p>
+                              <p>E-MAIL: </p>
+                              <p>CONTACT NUMBER: </p>
+                              <p>HOME ADDRESS: </p>
+                        </div>
+                  </div>
+            </div>
+      </main>
 
       <script src="../../scripts/user-dashboard.js"></script>
 </body>

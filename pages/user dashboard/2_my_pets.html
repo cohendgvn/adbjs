@@ -5,11 +5,113 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>My Pets</title>
+      <title>User Dashboard - My Pets</title>
       <link rel="stylesheet" href="../../styles/user-dashboard.css">
 </head>
 
 <body>
+      <nav class="dashboard-navbar">
+            <img class="dashboard-navbar-logo" src="../../assets/svg/about us paw print 1.svg">
+
+            <div class="dashboard-navbar-tabs">
+                  <a href="1_overview.html" class="dashboard-tab-inactive">OVERVIEW</a>
+                  <a href="2_my_pets.html" class="dashboard-tab-active">MY PETS</a>
+                  <a href="3_edit_profile.html" class="dashboard-tab-inactive">EDIT PROFILE</a>
+            </div>
+
+            <div class="dashboard-navbar-user">
+                  <div class="dashboard-navbar-user-icon">
+                        <img src="../../assets/svg/avatar icon - dashboard.svg">
+                  </div>
+
+                  <div class="dashboard-navbar-user-info">
+                        <p class="dashboard-navbar-user-name">LAST NAME, FIRST NAME, M.I.</p>
+                        <p class="dashboard-navbar-user-email">name@gmail.com</p>
+                  </div>
+
+                  <button class="dashboard-navbar-logout">
+                        <img src="../../assets/svg/power button icon.svg">
+                  </button>
+            </div>
+      </nav>
+
+      <main class="dashboard-container">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 1.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 1.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 1.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 1.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 1.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 2.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 2.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 2.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 2.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 2.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 1.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 1.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 1.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 1.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 1.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 2.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 2.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 2.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 2.svg">
+            <img class="background-paw-print" src="../../assets/svg/faq paw print 2.svg">
+
+            <div class="my-pets-container">
+                  <div class="my-pets-grid">
+                        <div class="my-pets-grid-header">
+                              <p>MY PETS</p>
+                              <hr>
+                        </div>
+
+                        <div class="my-pets-grid" id="my-pets-grid">
+                              <p class="no-pets-message">No pets registered yet.</p>
+                        </div>
+                  </div>
+
+                  <div class="pet-details-panel" id="pet-details-panel">
+                        <div class="pet-details-content" id="pet-details-content">
+                              <div class="pet-details-header">
+                                    <p>PET'S NAME | M/F</p>
+                                    <a class="remove-pet" id="remove-pet">REMOVE PET</a>
+                              </div>
+
+                              <hr>
+
+                              <div class="pet-details-info">
+                                    <p>AGE: <span id="detail-age"></span> &nbsp;&nbsp; BIRTHDAY: <span id="detail-birthday"></span></p>
+                                    <p>SPECIES: <span id="detail-species"></span></p>
+                                    <p>BREED: <span id="detail-breed"></span></p>
+                              </div>
+
+                              <hr>
+
+                              <div class="pet-details-info">
+                                    <p>REGISTRATION ID: <span id="detail-reg-id"></span></p>
+                                    <p>REGISTRATION STATUS: <span id="detail-reg-status"></span></p>
+                                    <p>VACCINATED: <span id="detail-vaccinated"></span></p>
+                                    <p>NEUTERED/SPAYED: <span id="detail-neutered"></span></p>
+                                    <p>NOTES: <span id="detail-registration-notes"></span></p>
+                              </div>
+                              
+                              <hr>
+                              
+                              <div class="pet-details-info">
+                                    <p>MEDICAL HISTORY</p>
+                                    <a href="" class="pet-vaccination-document">VACCINATION</a>
+                                    <a href="" class="pet-neuter-spay-status-document">NEUTER/SPAY</a>
+                              </div>
+                                                            
+                              <hr>
+                              
+                              <div class="pet-details-info">
+                                    <p>MORE ABOUT YOUR PET</p>
+                                    <p><span id="detail-pet-notes"></span></p>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </main>
 
       <script src="../../scripts/user-dashboard.js"></script>
 </body>
