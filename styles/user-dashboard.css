@@ -13,6 +13,7 @@
 body {
       font-family: "Kdam Thmor Pro", sans-serif;
       background: #FFFFFF;
+      overflow: hidden;
 }
 
 .dashboard-navbar {
@@ -20,7 +21,7 @@ body {
       align-items: center;
       justify-content: space-between;
       border-radius: 20px;
-      margin: 40px 60px 0px 60px;
+      margin: 30px 60px 0px 60px;
       padding: 8px;
       background-color: #E9E9E9;
 }
@@ -115,28 +116,537 @@ body {
       opacity: 1;
 }
 
+/* */
 
-
-/* work in progress */
-
-.dashboard-container-overview, .dashboard-container {
-      height: 680px;
-      display: flex;
-      flex-direction: column;
-      border-radius: 20px;
-      margin: 90px 60px 30px 60px;
-      padding: 50px;
-      background-color: #ADDAFF;
+.dashboard-container-overview {
+      margin-top: 30px;
+      padding: 60px;
 }
 
 .dashboard-container {
-      margin-top: 60px;
-      width: 1260px;
+      padding: 60px;
 }
 
-/* ------------ */
+.overview-header {
+      position: relative;
+      z-index: 1;
+      color: #3894D9;
+      font-size: 32px;
+      margin-top: -60px;
+      padding: 0px 0px 4px 40px;
+}
 
+.overview-container {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 600px;
+      align-items: start;
+      gap: 20px;
+}
 
+.overview-my-pets-grid {
+      height: 426px;
+      border-radius: 20px;
+      padding: 30px 40px 30px 40px;
+      backdrop-filter: blur(4px);
+      background-color: rgba(173, 218, 255, 0.6);
+}
+
+.overview-my-pets-grid-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+}
+
+.overview-my-pets-grid-header p {
+      color: #3894D9;
+      font-size: 28px;
+}
+
+.overview-my-pets-grid-see-more {
+      color: #3894D9;
+      font-size: 16px;
+}
+
+.overview-my-pets-grid-see-more:hover {
+      color: #2478B8;
+}
+
+.overview-my-pets-preview-snapshots {
+      height: 180px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+}
+
+.overview-my-pets-preview-snapshot {
+      position: relative;
+      width: 150px;
+      aspect-ratio: 3/4;
+      border-radius: 16px;
+      background-color: rgba(255, 255, 255, 0.6);
+}
+
+.overview-my-pets-preview-snapshot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+}
+
+.no-pets-message {
+      color: #3894D9;
+      font-size: 16px;
+}
+
+.overview-right-column {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+}
+
+.upcoming-reminders-grid, .recent-activities-grid {
+      height: 203px;
+      border-radius: 20px;
+      padding: 30px 40px 30px 40px;
+      backdrop-filter: blur(4px);
+      background-color: rgba(173, 218, 255, 0.6);
+}
+
+.upcoming-reminders-grid p, .recent-activities-grid p {
+      color: #3894D9;
+      font-size: 28px;
+      margin-bottom: 20px;
+}
+
+.dashboard-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+}
+
+.dashboard-list li {
+      display: flex;
+      align-items: center;
+      color: #3894D9;
+      font-size: 16px;
+      gap: 20px;
+}
+
+.register-pet-container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: flex-start;
+      border-radius: 20px;
+      margin-top: 20px;
+      padding: 30px 40px 30px 40px;
+      gap: 20px;
+      backdrop-filter: blur(4px);
+      background-color: rgba(173, 218, 255, 0.6);
+}
+
+.register-pet-left {
+      width: 280px;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      align-self: stretch;
+      justify-content: space-between;
+      gap: 20px;
+}
+
+.register-pet-left p {
+      color: #3894D9;
+      font-size: 28px;
+}
+
+.register-now-button {
+      width: 200px;
+      color: #FFFFFF;
+      font-size: 16px;
+      font-family: "Kdam Thmor Pro", sans-serif;
+      border: none;
+      border-radius: 20px;
+      padding: 16px;
+      cursor: pointer;
+      background-color: #3894D9;
+}
+
+.register-now-button:hover {
+      background-color: #2478B8;
+}
+
+.register-pet-divider {
+      width: 1px;
+      flex-shrink: 0;
+      align-self: stretch;
+      background-color: #3894D9;
+}
+
+.register-pet-form {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      gap: 20px;
+}
+
+.register-pet-form-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      gap: 20px;
+}
+
+.register-pet-form-field, .register-pet-form-field-dropdown {
+      width: 100px;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      gap: 20px;
+}
+
+.register-pet-form-field label, .register-pet-form-field-dropdown label {
+      color: #3894D9;
+      font-size: 16px;
+      margin: 0px 6px -16px 4px;
+      white-space: nowrap;
+}
+
+.register-pet-form-field input, .register-pet-form-field-dropdown select {
+      width: 100%;
+      color: #686868;
+      font-size: 16px;
+      font-family: "Kdam Thmor Pro", sans-serif;
+      outline: none;
+      border: none;
+      border-radius: 20px;
+      padding: 12px;
+      background-color: #FFFFFF;
+}
+
+.input-with-document-upload {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+}
+
+.input-with-document-upload select {
+      flex: 1;
+      color: #686868;
+      font-size: 16px;
+      outline: none;
+      border: none;
+      border-radius: 20px;
+      padding: 8px;
+      background-color: #FFFFFF;
+}
+
+.upload-document-button {
+      color: #FFFFFF;
+      font-size: 12px;
+      border: none;
+      border-radius: 20px;
+      padding: 8px;
+      cursor: pointer;
+      background-color: #A9A9A9;
+}
+
+.upload-document-button:hover {
+      background-color: #686868;
+}
+
+.upload-button {
+      align-self: flex-end;
+      color: #FFFFFF;
+      font-size: 12px;
+      border: none;
+      border-radius: 20px;
+      padding: 16px;
+      cursor: pointer;
+      background-color: #A9A9A9;
+}
+
+.upload-button:hover {
+      background-color: #686868;
+}
+
+/* */
+/* */
+/* */
+
+.my-pets-container {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      align-items: start;
+}
+
+.my-pets-grid {
+      display: flex;
+      flex-direction: column;
+      border-radius: 20px;
+      padding: 20px;
+      background-color: #ADDAFF;
+}
+
+.my-pets-grid-header p  {
+      color: #3894D9;
+      font-size: 20px;
+}
+
+.my-pets-grid-header hr {
+      border: none;
+}
+
+#my-pets-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.pet-card {
+      position: relative;
+      aspect-ratio: 3/4;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      border-radius: 20px;
+      padding: 10px;
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.6);
+}
+
+.pet-card img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+}
+
+.pet-card-footer {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+}
+
+.pet-details-panel {
+      border-radius: 20px;
+      padding: 24px;
+      backdrop-filter: blur(4px);
+      background-color: rgba(255, 255, 255, 0.6);
+}
+
+.pet-details-content {
+      display: flex;
+      flex-direction: column;
+}
+
+.pet-details-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+}
+
+.pet-details-header p {
+      color: #3894D9;
+      font-size: 16px;
+}
+
+.remove-pet {
+      color: #F44336;
+      font-size: 12px;
+      cursor: pointer;
+}
+
+.remove-pet:hover {
+      color: #B9271D;
+}
+
+.pet-details-panel hr {
+      border: none;
+}
+
+.pet-details-info {
+      display: flex;
+      flex-direction: column;
+}
+
+.pet-details-info p {
+      color: #3894D9;
+      font-size: 16px;
+}
+
+.pet-details-info span {
+      color: #686868;
+}
+
+.pet-vaccination-document, .pet-neuter-spay-status-document {
+      color: #3894D9;
+      font-size: 12px;
+}
+
+.pet-vaccination-document:hover, .pet-neuter-spay-status-document:hover {
+      color: #2478B8;
+}
+
+/* */
+/* */
+/* */
+
+.edit-profile-container {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 260px;
+      align-items: start;
+}
+
+.edit-profile-grid {
+      display: flex;
+      flex-direction: column;
+      border-radius: 20px;
+      padding: 24px;
+      background-color: #ADDAFF;
+}
+
+.edit-profile-grid-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.edit-profile-grid-header p {
+      color: #3894D9;
+      font-size: 20px;
+}
+
+.edit-profile-grid-links {
+      display: flex;
+      gap: 20px;
+}
+
+.change-password-link {
+      color: #3894D9;
+      font-size: 12px;
+      cursor: pointer;
+}
+
+.request-account-deletion-link {
+      color: #F44336;
+      font-size: 12px;
+      cursor: pointer;
+}
+
+.edit-profile-grid hr {
+      border: none;
+}
+
+.edit-profile-form {
+      display: flex;
+      flex-direction: column;
+}
+
+.edit-profile-section {
+      display: flex;
+      flex-direction: column;
+}
+
+.edit-profile-section {
+      display: flex;
+      flex-direction: column;
+}
+
+.edit-profile-form-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+}
+
+.edit-profile-form-row p {
+      color: #3894D9;
+      font-size: 16px;
+}
+
+.edit-profile-form-field {
+      width: 80px;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+}
+
+.edit-profile-form-field label {
+      font-size: 12px;
+      color: #3894D9;
+}
+
+.edit-profile-form-field input {
+      color: #686868;
+      font-size: 16px;
+      outline: none;
+      border: none;
+      border-radius: 20px;
+      padding: 12px;
+      background-color: #FFFFFF;
+}
+
+.edit-profile-submit {
+      display: flex;
+      justify-content: flex-end;
+}
+
+.update-profile-button {
+      color: #FFFFFF;
+      font-size: 16px;
+      border: none;
+      border-radius: 20px;
+      padding: 16px;
+      cursor: pointer;
+      background-color: #3894D9;
+}
+
+.update-profile-button:hover {
+      background-color: #2478B8;
+}
+
+.edit-profile-panel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.profile-avatar {
+      width: 180px;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100%;
+      background-color: #E9E9E9;
+}
+
+.profile-avatar img {
+      width: 100%;
+}
+
+.profile-summary {
+      display: flex;
+      flex-direction: column;
+      border-radius: 20px;
+      padding: 20px;
+      background-color: #ADDAFF;
+}
+
+.profile-summary p {
+      color: #3894D9;
+      font-size: 16px;
+}
+
+/* */
 
 .background-paw-print {
       position: absolute;

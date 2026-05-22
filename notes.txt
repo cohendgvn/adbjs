@@ -1,13 +1,1 @@
 
->> avatar, logout button, and other icons located in svg folder
->> readded line 63 and line 72 on style.css
-   line 63: 100vh is the height of the image itself, inadd ko lang ng 20px kasi kapag wala, nakikita 'yung blue box ng About Us
-            section since nag-ooverlap siya pataas sa hero section ng landing page
-   line 72: masyadong mataas 'yung dog sa page, intentional 'yung sky as whitespace sa taas niya, similar to the navbar's top margin
-
->> currently refactoring index.html and style.css, plz don't modify anymore :((
-   - may mga leftover declarations kasi dahil sa multiple trials and errors na ginawa ko to get the intended result sa styling, and
-     i'm still cleaning the code, so no need to bother yourself
->> currently finishing 'yung frontend ng user dashboard kasi i can't implement the simplified data management system i thought of
-      using without a reference kung paano sila id-display
-   - you 
