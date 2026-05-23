@@ -7,3 +7,10 @@ start na agad ako sa backend, it's so wraps
 
 admin dashboard 1-3 done, along w css (tho parang ang liit masyado ng texts T-T)
 kain muna 'ko tas js na tho check ko yung js ng user db mo since di ko na alam gagawin HAHAHA
+
+
+baka tomorrow morning ko pa ma-push 'yung js ng user-auth and user-db
+nagana na siya, ide-debug ko na lang slight :sob:
+i used localStorage pala para persistent lang 'yung data kahit mag-refresh or magpalipat-lipat ng page
+try mo pala gumawa ng user account then mag-sign in w gawa-gawang info kapag na-push ko bukas kung magw-work 'yung user db sa'yo hehe
+pa-add din pala ng logo sa assets files natin, thankuuu
