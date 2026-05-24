@@ -17,4 +17,7 @@ hindi pa siya debugged entirely
 debugging pa lang currently 'yung overview and my pets page kasi may ni-remove akong features
 
 
-oki pick na ku logo, tho baka itweak ko to fit the site better, thank u dani
+oki pick na ku logo, tho baka itweak ko to fit the site better
+
+tried signing up and registering a pet, also nag-edit me info ko and logged out, so far it worked smoothly naman, tho when I check the admin db, di sya nagreflect so 
+I'll check on my js baka may error ako.
