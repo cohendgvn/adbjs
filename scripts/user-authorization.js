@@ -41,9 +41,7 @@ if (signInUser) {
             const password = inputs[1].value;
 
             const users = getUsers();
-            const match = users.find(
-                  (u) => u.email === email && u.password === password
-            );
+            const match = users.find((u) => u.email === email && u.password === password);
 
             if (!match) {
                   alert("Invalid email or password.");
@@ -65,9 +63,7 @@ if (signInAdmin) {
             const email = inputs[0].value.trim();
             const password = inputs[1].value;
 
-            const match = adminAccounts.find(
-                  (a) => a.email === email && a.password === password
-            );
+            const match = adminAccounts.find((a) => a.email === email && a.password === password);
             
             if (!match) {
                   alert("Invalid admin credentials.");
@@ -83,52 +79,50 @@ if (signUp) {
       const form = document.querySelector(".sign-up-form");
       
       form.addEventListener("submit", function (e) {
-      e.preventDefault();
+            e.preventDefault();
 
-      const fields = form.querySelectorAll("input");
-      const firstName = fields[0].value.trim();
-      const lastName = fields[1].value.trim();
-      const email = fields[2].value.trim();
-      const password = fields[3].value;
-      const confirmPassword = fields[4].value;
+            const fields = form.querySelectorAll("input");
+            const firstName = fields[0].value.trim();
+            const lastName = fields[1].value.trim();
+            const email = fields[2].value.trim();
+            const password = fields[3].value;
+            const confirmPassword = fields[4].value;
 
-      if (!firstName || !lastName || !email || !password || !confirmPassword) {
-            alert("Please fill in all required fields.");
-            return;
-      }
+            if (!firstName || !lastName || !email || !password || !confirmPassword) {
+                  alert("Please fill in all required fields.");
+                  return;
+            }
 
-      if (password !== confirmPassword) {
-            alert("Passwords do not match.");
-            return;
-      }
+            if (password !== confirmPassword) {
+                  alert("Passwords do not match.");
+                  return;
+            }
 
-      const users = getUsers();
+            const users = getUsers();
 
-      const emailTaken = users.some(
-            (u) => u.email.toLowerCase() === email.toLowerCase()
-      );
-      if (emailTaken) {
-            alert("An account with that email address already exists.");
-            return;
-      }
+            const emailTaken = users.some((u) => u.email.toLowerCase() === email.toLowerCase());
+            if (emailTaken) {
+                  alert("An account with that email address already exists.");
+                  return;
+            }
 
-      const newUser = {
-            userID: generateUserID("U", users, "userID"),
-            role: "user",
-            firstName,
-            lastName,
-            middleInitial: "",
-            email,
-            password,
-            contactNumber: "",
-            birthday: { month: null, day: null, year: null },
-            address: { houseNumber: "", streetOrBuilding: "", barangay: "" },
-      };
+            const newUser = {
+                  userID: generateUserID("U", users, "userID"),
+                  role: "user",
+                  firstName,
+                  lastName,
+                  middleInitial: "",
+                  email,
+                  password,
+                  contactNumber: "",
+                  birthday: { month: null, day: null, year: null },
+                  address: { houseNumber: "", streetOrBuilding: "", barangay: "" },
+            };
 
-      users.push(newUser);
-      saveUsers(users);
+            users.push(newUser);
+            saveUsers(users);
 
-      alert("Account created successfully! You may now sign in.");
-      window.location.href = "1_sign_in_user_account.html";
+            alert("Account created successfully! You may now sign in.");
+            window.location.href = "1_sign_in_user_account.html";
       });
 }
