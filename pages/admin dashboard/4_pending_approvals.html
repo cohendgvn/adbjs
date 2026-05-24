@@ -28,7 +28,91 @@
   </div>
 </header>
 
+<div class="page-header">
+    <h2>ADMIN DASHBOARD &bull;&bull;&bull;</h2>
+    <span class="pending-badge">PENDING APPROVALS</span>
+  </div>
 
+  <div class="main-card">
+
+    <div class="tabs">
+      <button class="tab active" onclick="switchTab('new-reg', this)">New Registration</button>
+      <button class="tab" onclick="switchTab('for-renewal', this)">For Renewal</button>
+      <button class="tab" onclick="switchTab('pet-info', this)">Pet Information Update</button>
+    </div>
+
+    <div id="new-reg" class="tab-content active">
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>DATE</th>
+              <th>OWNER'S USER ID</th>
+              <th>SNAPSHOT</th>
+              <th>NAME</th>
+              <th>M/F</th>
+              <th>SPECIES</th>
+              <th>BREED</th>
+              <th>BIRTHDAY</th>
+              <th>AGE</th>
+              <th>NOTES</th>
+              <th>MEDICAL RECORDS</th>
+              <th colspan="2"></th>
+            </tr>
+          </thead>
+          <tbody id="new-reg-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="for-renewal" class="tab-content">
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>DATE</th>
+              <th>OWNER'S USER ID</th>
+              <th>SNAPSHOT</th>
+              <th>NAME</th>
+              <th>M/F</th>
+              <th>SPECIES</th>
+              <th>BREED</th>
+              <th>BIRTHDAY</th>
+              <th>AGE</th>
+              <th>NOTES</th>
+              <th>MEDICAL RECORDS</th>
+              <th colspan="2"></th>
+            </tr>
+          </thead>
+          <tbody id="for-renewal-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="pet-info" class="tab-content">
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>DATE</th>
+              <th>OWNER'S USER ID</th>
+              <th>SNAPSHOT</th>
+              <th>NAME</th>
+              <th>M/F</th>
+              <th>SPECIES</th>
+              <th>BREED</th>
+              <th>BIRTHDAY</th>
+              <th>AGE</th>
+              <th>NOTES</th>
+              <th>MEDICAL RECORDS</th>
+              <th colspan="2"></th>
+            </tr>
+          </thead>
+          <tbody id="pet-info-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 
 <script>
 function logout() {
