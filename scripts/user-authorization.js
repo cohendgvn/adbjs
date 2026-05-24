@@ -115,8 +115,8 @@ if (signUp) {
                   email,
                   password,
                   contactNumber: "",
-                  birthday: { month: null, day: null, year: null },
-                  address: { houseNumber: "", streetOrBuilding: "", barangay: "" },
+                  birthday: {month: null, day: null, year: null},
+                  address: {houseNumber: "", streetNameOrBuilding: "", barangay: ""},
             };
 
             users.push(newUser);
