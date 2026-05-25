@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,7 +36,7 @@
 
     <h2>USER MANAGEMENT <span class="dots">● ● ●</span></h2>
 
-  <main class="dashboard-usermng">
+  <main class="dashboard-usermng" style="min-height: 800px;">
     <section class="user-details">
         <h3>[SELECTED USER]</h3>
         <p><strong>User ID:</strong> <span id="userid"></span></p>
@@ -50,13 +51,7 @@
         <p><span id="petstatus"></span></p> </section>
         
     <section class="user-table">
-        <div class="table-header-controls"> <div class="sort-dropdown">
-                <button class="sort-btn" id="sortbtn">Sort By: <span class="arrow">▼</span></button>
-                <ul class="dropdown-content" id="dropdownMenu">
-                    <li class="dropdown-item" data-value="name">Name</li>
-                    <li class="dropdown-item" data-value="userid">User ID</li>
-                </ul>
-            </div>
+        <div class="table-header-controls"> 
             <div class="controls">
                 <input type="text" id="searchinput" placeholder="Search...">
             </div>
